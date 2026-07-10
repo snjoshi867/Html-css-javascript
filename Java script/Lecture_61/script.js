@@ -1,0 +1,1 @@
+console.log("solution of ex 9 done")

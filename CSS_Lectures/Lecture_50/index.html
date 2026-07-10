@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 500px 500px;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            grid-column: auto;
+            margin-top: 100px;
+
+        }
+        img{
+            filter: blur(px);
+        }
+        .img1{
+            
+
+        }
+        .img2{
+            filter: brightness(100%) contrast();
+            filter: invert(100%);
+            filter: opacity(0.8);
+
+        }
+        .img3{
+            filter: grayscale(100%);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.stocksnap.io/img-thumbs/280h/abstract-wavy_UOTSJVB9HM.jpg" alt="" class="img1">
+        <img src="https://th.bing.com/th/id/OIP.BasD8G-nPqHtM8qdyCNm6QHaEK?w=282&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="img2">
+        <img src="https://th.bing.com/th/id/OIP.mrKDEe7pKnd7HK8lG54b-gHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt=" " class="img3">
+    </div>
+    
+</body>
+</html>

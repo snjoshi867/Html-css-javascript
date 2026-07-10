@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /*ELEMENT SELECTOR*/
+        /* div{
+            background-color: brown;
+        } */
+
+        /*CLASS SELECTOR*/
+        .red{
+            background-color: brown;
+        }
+
+        /*ID SELECTOR*/
+        #green{
+            background-color: aquamarine;
+        }
+
+        /*CHILD SLECTOR*/
+        div>article>p{
+            background-color: blanchedalmond;
+            color: brown;
+        }
+
+        #green>p{
+            background-color: greenyellow;
+            color:rgb(80, 15, 232);
+        }
+
+        /*DESCENDANT SELECTOR*/
+
+        div p {
+            color: aliceblue;
+        }
+
+        /*UNIVERSAL SELECTOR*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* PSEUDO SELECTOR*/
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color:green;
+        }
+        a:active{
+            background-color: aquamarine;
+        }
+
+        a:hover{
+            background-color: blueviolet;
+        }
+        p:first-child{
+            background-color: orange;
+        }
+
+
+       
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div
+        <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, incidunt! Adipisci fugiat minima explicabo nam aliquam possimus natus ad maiores ratione. Earum, veritatis quisquam! Numquam recusandae esse soluta totam porro.
+        </p>
+        </article>
+    </div>
+
+    <div id="green">
+        My name is soham
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci pariatur tenetur illo fugiat maxime cupiditate, asperiores autem quo quod laboriosam veritatis odio neque delectus praesentium impedit, fuga rerum aspernatur a!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quos porro similique aliquam accusantium sequi dolor quisquam culpa ducimus deleniti nihil, nemo quod alias consectetur! Ipsam vel itaque provident consequuntur!</p>
+    </div>
+    <article>SOHAM IS HERE MANNN</article>
+    <a  target="_blank" href="https://www.google.com" >GO TO GOOGLE</a>
+    <a target="_blank" href="https://www.facebook.com">GO TO FACEBOOK</a>
+  
+    
+</body>
+</html>

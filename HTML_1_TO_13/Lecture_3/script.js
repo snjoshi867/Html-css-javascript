@@ -1,0 +1,1 @@
+alert("GO BACK TO SCHOOLS")
