@@ -1,46 +1,31 @@
-let x = document.body.firstElementChild.children
+function creatCard(title,cName,views,monthsOld,duration,thumbnail){
+    let viewstr
+    if(views<1000000){
+          viewstr=views/1000 + "K"
+    }
+    else if (views>1000000){
+         viewstr=views/1000000 + "M"
+    }
+    else{
+        viewstr=views/1000 + "K"
+    }
+   
+    let html =`<div class="card">
+            <div class="image">
+                <img src="${thumbnail}">
+                <div class = "capsule">${duration}</div>
+            </div>
+            <div class="text">
+                <h1>${title}</h1>
+                <p>${cName}. ${viewstr} views . ${monthsOld} monts ago</p>
+            </div>
 
-let rand = Math.random()
+        </div>`
+    
+ document.querySelector(".container").innerHTML = document.querySelector(".container").innerHTML + html
 
-if (rand>0.5){
-    x[0].style.backgroundColor = "red"
-}
-else{
-    x[0].style.backgroundColor = "blue"
-}
-
-let rand1 = Math.random()
-
-if (rand1>0.1){
-    x[1].style.backgroundColor = "pink"
-}
-else{
-    x[1].style.backgroundColor = "yellow"
-}
-let rand2 = Math.random()
-
-if (rand2>0.5){
-    x[2].style.backgroundColor = "orange"
-}
-else{
-    x[2].style.backgroundColor = "black"
-}
-let rand3 = Math.random()
-
-if (rand3>0.1){
-    x[3].style.backgroundColor = "green"
-}
-else{
-    x[3].style.backgroundColor = "silver"
-}
-let rand4 = Math.random()
-
-if (rand4>0.1){
-    x[4].style.backgroundColor = "lavender"
-}
-else{
-    x[4].style.backgroundColor = "coral"
 }
 
-alert(`rand is ${rand} ,rand1 is ${rand1} ,rand2 is ${rand2} ,rand3 is ${rand3} ,rand4 is ${rand4}`)
-
+creatCard("Introduction to backend | sigma web dev ", "Code with mohan" , 560000, 7,"31:32", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4pqAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAwWOixJVrKLFindK92kYMgTcQbw")
+creatCard("Introduction to backend | sigma web dev ", "Code with mohan" , 560000, 7,"31:32", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4pqAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAwWOixJVrKLFindK92kYMgTcQbw")
+creatCard("Introduction to backend | sigma web dev ", "Code with mohan" , 560000, 7,"31:32", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4pqAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAwWOixJVrKLFindK92kYMgTcQbw")
