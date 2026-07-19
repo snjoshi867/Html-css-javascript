@@ -6,7 +6,6 @@ const additem = async (item)=>{
     div.innerHTML = item
     document.body.append(div)
 }
-
 const randomdelay = ()=>{
     return new Promise((resolve,reject)=>{
         timeout= 1+ 6*Math.random()
@@ -15,8 +14,6 @@ const randomdelay = ()=>{
         }, timeout*1000)
     })
 }
-
-
 async function main(){
  
 setInterval(()=>{
