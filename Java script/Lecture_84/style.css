@@ -16,12 +16,12 @@ body{
 
 
 .left{
-    width: 25vw;
+    width: 280px;
     padding: 10px;
 }
 
 .right{
-    width: 75vw;
+    width: calc(100% - 280px);
     margin: 16px 0;
     padding: 10px;
     margin-right: 16px;
@@ -72,9 +72,13 @@ body{
 }
 
 .footer a{
+    display: flex;
+    flex-direction: row;
     color: gray;
     white-space: nowrap;
-    font-size: 9.9px;
+    font-size: 9px;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .header{
@@ -141,12 +145,211 @@ body{
     height: 45px;
 }
 
-.card:hover .play{
-    opacity: 1;
-}
-
 .card:hover {
     opacity: 0.4;
+}
+
+.card:hover .play{
+    opacity: 1 !important;
+}
+
+.cardcontainer {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    height: 500px;      
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cardcontainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cardcontainer::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+.cardcontainer::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.cardcontainer::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+.cardcontainer {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #121212;
+}
+
+.cardcontainer {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+    .footer{
+        flex-wrap: wrap;
+    }
+
+    .footer a{
+        font-size: 7px;
+    }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;  
+}
+
+.nav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.signup,
+.login{
+    white-space: nowrap; 
+}
+
+@media (max-width: 900px) {
+
+    .left{
+        width: 200px;
+    }
+
+    .right{
+        width: calc(100% - 200px);
+    }
+
+    .home ul li{
+        font-size: 14px;
+    }
+
+    .heading h2{
+        font-size: 15px;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .footer a{
+        font-size: 8px;
+    }
+        .header{
+        padding: 10px;
+    }
+
+    .header > *{
+        padding: 10px;
+    }
+
+    .buttons{
+        gap: 8px;
+    }
+
+    .signup,
+    .login{
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .nav .material-icons{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .left{
+        width: 170px;
+    }
+
+    .right{
+        width: calc(100% - 170px);
+    }
+
+    .home ul li{
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .heading{
+        gap: 10px;
+    }
+
+    .heading h2{
+        font-size: 13px;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
+
+    .footer a{
+        font-size: 7px;
+    }
+    .signup,
+    .login{
+        padding: 3px 7px;
+        font-size: 5px;
+    }
+
+    .buttons{
+        gap: 5px;
+    }
+
+    .nav .material-icons{
+        font-size: 20px;
+    }
+}
+
+.signbtn {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.loginbtn {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+.signbtn:hover , .loginbtn:hover {
+    opacity: 0.4;
+    font-size: 10px;
+}
+
+.right{
+    position: relative;
+}
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(1, 129, 6);
+    width: calc(100% - 60px);
+    margin: 16px 0;
+    padding: 10px;
+    margin-right: 16px;
+    border-radius: 10px;
 }
 
 .border{
@@ -190,3 +393,4 @@ body{
 .p-1{
     padding: 10px;
 }
+
