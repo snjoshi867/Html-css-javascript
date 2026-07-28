@@ -1,18 +1,6 @@
 {
-  "name": "spotify",
-  "version": "1.0.0",
-  "description": "This is a spotify clone for my app",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "spotify",
-    "music"
-  ],
-  "author": "soham",
-  "license": "ISC",
   "dependencies": {
+    "expres": "^0.0.5",
     "slugify": "^1.6.9"
   }
 }
